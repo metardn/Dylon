@@ -1,0 +1,67 @@
+.create-btn {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.animate:hover {
+  transition: 0,7s;
+  transform: translateY(-1px);
+}
+
+.create-btn:hover { background: #FAFAFA; }
+
+.new-btn:hover { text-decoration: underline; }
+
+.logo { max-width: 70px; }
+
+h1 { 
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.btn, a, input::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+form label {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+p {
+  width: 100%; 
+  text-align: center; 
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+  font-weight: 400;
+  font-size: 12px;
+
+  span { 
+    background:#fff; 
+    padding:0 10px; 
+  }
+}
+
+form input { box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1); }
+
+input:focus { border: 1px solid #000AFF; }
+
+.btn-success {
+  border-color: #00A33D;
+  background: #00A33D;
+}
+
+.btn-success:hover { background: #198754; }
+
+.space-nowrap { white-space: nowrap;}
+
+footer {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  label {
+    font-weight: 400;
+    font-size: 14px;
+  }
+}
