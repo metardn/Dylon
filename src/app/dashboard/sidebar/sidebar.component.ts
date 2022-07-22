@@ -6,7 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent implements OnInit {
-
+  
+  logo = "assets/dashboard_logo.png"
+  airplane = "assets/airplane.png"
+  
   constructor() { }
 
   ngOnInit(): void {

@@ -1,0 +1,56 @@
+.sidebar {
+  height: 100%;
+}
+
+.sticky {
+  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.logo { max-width: 30px; }
+
+.choosen-menu {width: 4px; }
+
+ul li:hover {
+  font-weight: 500;
+
+  i { color: #2B6FFF; }
+  .choosen-menu { background: #2B6FFF; }
+}
+
+.airplane {
+  margin-top: 100%;
+  background: rgba(40, 44, 56, 0.05);
+  border-radius: 20px;
+  height: 197px;
+
+  img { 
+    width: stretch;
+    margin-top: -50%; 
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  button {
+    background: #BFD4FF;
+    border-radius: 20px;
+    border: none;
+  }
+}
+
+.airplane button:hover {
+  background: #b7cdf9;
+  transition: 0,7s;
+  transform: translateY(-1px);
+}
+
+.form-check input {
+  border: 2px solid;
+}
+
+.toggle {
+  position: absolute;
+  bottom: 2%;
+}
