@@ -1,3 +1,114 @@
 .dashboard {
   background: rgba(40, 44, 56, 0.05);
 }
+
+.notification {
+  background: #EE6F6C;
+  width: 8px;
+  height: 8px;
+  margin-left: -13%;
+  margin-top: 25%;
+}
+
+.notification-bell { margin-left: -25%; }
+
+.user {
+  width: 45px;
+  height: 45px;
+}
+
+.top-icon {
+  font-size: 23px;
+}
+
+form {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
+  height: 44px;
+
+  input {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    width: 70%;
+  }
+
+  .shortcut {
+    background: rgba(40, 44, 56, 0.05);
+    width: 15%;
+  }
+}
+
+.percentase { color: #BEE7BB; }
+
+span img { width: 24px; }
+
+.card {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
+  border: none;
+}
+
+.resume-card {
+  h5 { font-size: 16px; }
+
+  h3 { font-size: 30px; }
+
+  span { font-size: 14px; }
+
+  .chart {
+    height: 100%;
+  }
+}
+
+.traffic-tab-list {
+  height: stretch;
+}
+
+.choosen-menu {
+  height: 4px;
+  margin-top: auto;
+}
+
+.tab-traffic:hover, .active {
+  font-weight: 500;
+  .choosen-menu { background:#2B6FFF;}
+}
+
+select {
+  border: 1px solid #ECECEE;
+  border-radius: 5px;
+  outline: none;
+}
+
+.animate {
+  border: none;
+}
+
+.animate:hover, .animate-active {
+  font-weight: 500;
+  background: rgba(40, 44, 56, 0.05);
+  transition: 0,7s;
+  transform: translateY(-1px);
+}
+
+.geo-chart {
+  margin-left: 1%;
+  height: 300px;
+  margin-top: -13%;
+  margin-bottom: -5%;
+}
+
+.card-title { font-size: 16px;}
+.text-item { font-size: 14px; }
+
+.view-chart {
+  height: 160px;
+  width: 160px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.red-text { color: #FDBFA5; }
+.green-text { color: #BEE7BB;}
+.blue-text { color: #7AC2FA ;}
