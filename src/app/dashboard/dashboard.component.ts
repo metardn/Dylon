@@ -163,13 +163,13 @@ export class DashboardComponent implements OnInit {
       {
         data: [
             {
-              value: 19,
+              value: 4,
               itemStyle: {
                 color: '#FDBFA5'
               }
             },
             {
-              value: 15,
+              value: 6,
               itemStyle: {
                 color: '#2B6FFF'
               }
@@ -181,13 +181,13 @@ export class DashboardComponent implements OnInit {
               }
             },
             {
-              value: 6,
+              value: 15,
               itemStyle: {
                 color: '#BEE7BB'
               }
             },
             {
-              value: 4,
+              value: 20,
               itemStyle: {
                 color: '#FFE588'
               }
@@ -208,7 +208,7 @@ export class DashboardComponent implements OnInit {
       {
         name: 'Access From',
         type: 'pie',
-        radius: ['70%', '90%'],
+        radius: ['70%', '95%'],
         itemStyle: {
           borderRadius: 4,
           borderColor: '#fff',

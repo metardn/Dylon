@@ -4,19 +4,19 @@
 	</div>
 	<div class="col dashboard">
     <div class="container-fluid">
-      <div class="mx-5 mt-4">
+      <div class="mx-1 mx-xl-4 mt-4">
         <div class="row">
           <div class="col-sm-7 col-md-6 col-xl-4">
             <form class="d-flex flex-row align-items-center bg-white">
               <i class="bi bi-search ms-3 me-2"></i>
               <input type="text" placeholder="Start writing or type a command">
-              <div class="shortcut rounded d-flex justify-content-center gap-2">
+              <div class="shortcut rounded d-flex justify-content-center gap-2 me-1 me-sm-0">
                 <i class="bi bi-grid"></i>
                 <label class="fw-bold">F</label>
               </div>
             </form>
           </div>
-          <div class="col d-flex align-items-center gap-4 justify-content-end">
+          <div class="col-12 col-sm d-flex align-items-center gap-4 justify-content-center justify-content-sm-end mt-3 mt-sm-0">
             <div class="d-flex">
               <i class="bi bi-chat-left-dots top-icon"></i>
               <div class="notification rounded-circle"></div>
@@ -30,77 +30,80 @@
         </div>
 
         <div class="row mt-5 mb-5">
-          <div class="col-9">
+          <div class="col-12 col-lg-7 col-xl-8 col-xxl-9">
             <h4>Hi, Wade!</h4>
             <span>Today the overall efficiency is </span> 
             <span class="percentase">153%</span>
             <span>. Otherwhise, there is nothing new. <img [src]="sun"></span>
 
-            <div class="row mt-3">
-              <div class="col-4">
-                <div class="card resume-card p-4">
-                  <h5 class="fw-bold">Visit Duration</h5>
-                  <div class="row mt-4 mb-3">
-                    <div class="col pe-0">
-                      <h3 class="fw-bold">5m 8s</h3>
-                      <span class="fw-bold red-text">-12.01%</span>
-                    </div>
-                    <div class="col ps-0">
-                      <div echarts [options]="option1" class="chart"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="card resume-card p-4">
-                  <h5 class="fw-bold">Total Visits</h5>
-                  <div class="row mt-4 mb-3">
-                    <div class="col pe-0">
-                      <h3 class="fw-bold">325k</h3>
-                      <span class="fw-bold green-text">+12.01%</span>
-                    </div>
-                    <div class="col ps-0">
-                      <div echarts [options]="option2" class="chart"></div>
+            <div class="pb-5 pb-sm-3">
+              <div class="row mt-3">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-6 col-xxl-4">
+                  <div class="card resume-card p-4">
+                    <h5 class="fw-bold">Visit Duration</h5>
+                    <div class="row mt-4 mb-3">
+                      <div class="col pe-0">
+                        <h3 class="fw-bold space-nowrap">5m 8s</h3>
+                        <span class="fw-bold red-text">-12.01%</span>
+                      </div>
+                      <div class="col ps-0">
+                        <div echarts [options]="option1" class="chart ps-0"></div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-4">
-                <div class="card resume-card p-4">
-                  <h5 class="fw-bold">Realtime Users</h5>
-                  <div class="row mt-4 mb-3">
-                    <div class="col pe-0">
-                      <h3 class="fw-bold">635</h3>
-                      <span class="fw-bold green-text">+12.01%</span>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-6 col-xxl-4">
+                  <div class="card resume-card p-4 my-4 my-sm-0">
+                    <h5 class="fw-bold">Total Visits</h5>
+                    <div class="row mt-4 mb-3">
+                      <div class="col pe-0">
+                        <h3 class="fw-bold">325k</h3>
+                        <span class="fw-bold green-text">+12.01%</span>
+                      </div>
+                      <div class="col ps-0">
+                        <div echarts [options]="option2" class="chart ps-0"></div>
+                      </div>
                     </div>
-                    <div class="col ps-0">
-                      <div echarts [options]="option3" class="chart"></div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-6 col-xxl-4 mt-4 mt-sm-4 mt-md-0 mt-lg-4 mt-xxl-0">
+                  <div class="card resume-card p-4 mt-4 mt-sm-0">
+                    <h5 class="fw-bold">Realtime Users</h5>
+                    <div class="row mt-4 mb-3">
+                      <div class="col pe-0">
+                        <h3 class="fw-bold">635</h3>
+                        <span class="fw-bold green-text ps-0">+12.01%</span>
+                      </div>
+                      <div class="col ps-0">
+                        <div echarts [options]="option3" class="chart"></div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+
             <div class="card mt-4">
               <div class="row d-flex align-items-center px-4">
-                <div class="col">
-                  <h5 class="card-title fw-bold">Traffic Channel</h5>
+                <div class="col-12 col-sm-4">
+                  <h5 class="card-title fw-bold d-flex justify-content-center justify-content-sm-start pt-3">Traffic Channel</h5>
                 </div>
                 <div class="col d-flex justify-content-center traffic-tab-list m-0 p-0">
                   <div class="tab-traffic active">
                     <div class="py-3">
-                      <span class="px-3 text-item">Hotline</span>
+                      <span class="px-1 px-sm-3 px-lg-2 px-xl-3 text-item">Hotline</span>
                     </div>
                     <div class="choosen-menu"></div>
                   </div>
                   <div class="tab-traffic">
                     <div class="py-3">
-                      <span class="px-3 text-item">Balance</span>
+                      <span class="px-1 px-sm-3 px-lg-2 px-xl-3 text-item">Balance</span>
                     </div>
                     <div class="choosen-menu"></div>
                   </div>
                   <div class="tab-traffic">
                     <div class="py-3">
-                      <span class="px-3 text-item">Total</span>
+                      <span class="px-1 px-sm-3 px-lg-2 px-xl-3 text-item">Total</span>
                     </div>
                     <div class="choosen-menu"></div>
                   </div>
@@ -115,43 +118,55 @@
                 </div>
               </div>
               <hr class="m-0">
-              <div echarts [options]="optionTraffic" class="traffic-chart"></div>
+              <div echarts [options]="optionTraffic" class="traffic-chart mx-1"></div>
             </div>
           </div>
           <div class="col pt-1">
-            <div class="d-flex gap-4 mt-3">
-              <button class="btn animate animate-active">Blog</button>
-              <button class="btn animate">Platform</button>
-              <button class="btn animate">Forum</button>
-            </div>
-
-            <div class="card mt-4">
-              <h5 class="ms-3 mt-3 card-title fw-bold">Views from Geo</h5>
-              <div echarts [options]="optionGeo" class="geo-chart"></div>
-            </div>
-
-            <div class="card mt-4">
-              <h5 class="ms-3 mt-3 card-title fw-bold">Viewing from Devices</h5>
-              <div echarts [options]="optionView" class="view-chart my-4"></div>
-
-              <div class="row d-flex align-items-center px-3 mb-3">
-                <div class="col d-grid">
-                  <i class="bi bi-laptop blue-text"></i>
-                  <span class="text-item mt-1">Desktop</span>
-                  <h5 class="text-item fw-bold mt-1">79.1%</h5>
-                </div>
-                <div class="col d-grid">
-                  <i class="bi bi-phone green-text"></i>
-                  <span class="text-item mt-1">Mobile</span>
-                  <h5 class="text-item fw-bold mt-1">9.4%</h5>
-                </div>
-                <div class="col d-grid">
-                  <i class="bi bi-tablet red-text"></i>
-                  <span class="text-item mt-1">Tablet</span>
-                  <h5 class="text-item fw-bold mt-1">2.8%</h5>
+            <div class="row">
+              <div class="col-12">
+                <div class="d-flex gap-3 mt-3">
+                  <button class="btn animate animate-active">Blog</button>
+                  <button class="btn animate">Platform</button>
+                  <button class="btn animate">Forum</button>
                 </div>
               </div>
             </div>
+
+            <div class="row mt-4 ">
+              <div class="col-12 col-sm-6 col-md-6 col-lg-12">
+                <div class="card side-card">
+                  <h5 class="ps-4 mt-3 card-title fw-bold pb-0 mb-0">Views from Geo</h5>
+                  <div echarts [options]="optionGeo" class="geo-chart"></div>
+                </div>
+              </div>
+              <div class="col mt-4 mt-sm-0">
+                <div class="card mt-lg-5">
+                  <h5 class="ps-4 mt-3 card-title fw-bold">Viewing from Devices</h5>
+                  <div echarts [options]="optionView" class="view-chart my-4"></div>
+                  <div class="row d-flex align-items-center px-4 mb-3">
+                    <div class="col d-grid">
+                      <i class="bi bi-laptop blue-text view-icon"></i>
+                      <span class="text-item mt-1">Desktop</span>
+                      <h5 class="text-item fw-bold mt-1">79.1%</h5>
+                    </div>
+                    <div class="col d-grid">
+                      <i class="bi bi-phone green-text view-icon"></i>
+                      <span class="text-item mt-1">Mobile</span>
+                      <h5 class="text-item fw-bold mt-1">9.4%</h5>
+                    </div>
+                    <div class="col d-grid">
+                      <i class="bi bi-tablet red-text view-icon"></i>
+                      <span class="text-item mt-1">Tablet</span>
+                      <h5 class="text-item fw-bold mt-1">2.8%</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+            
+            
           </div>
         </div>
       </div>
