@@ -5,13 +5,21 @@
 	<div class="col dashboard">
     <div class="container-fluid">
       <div class="mx-1 mx-xl-4 mt-0 mt-lg-4">
-        <div class="row gx-0 d-md-block d-lg-none">
-          <app-canvas></app-canvas>
-        </div>
-
+        
         <div class="row">
-          <div class="col-sm-7 col-md-6 col-xl-4">
-            <form class="d-flex flex-row align-items-center bg-white">
+          <div class="col-2 col-sm-1 d-md-block d-lg-none">
+            <app-canvas></app-canvas>
+          </div>
+
+          <div class="col-1 d-flex flex-row align-items-center justify-content-center d-sm-none">
+            <form action="/search" method="get" class="search-expand-form rounded-circle mt-1">
+              <label for="search-expand" class="d-flex justify-content-center align-items-center"><i class="bi bi-search top-icon icon-btn"></i></label>
+              <input type="search" placeholder="Start writing or type a command" id="search-expand" class="position-absolute">
+            </form>
+          </div>
+
+          <div class="d-none d-sm-block col-sm-6 col-md-6 col-xl-4">
+            <form class="d-flex flex-row align-items-center bg-white mt-3">
               <i class="bi bi-search ms-3 me-2"></i>
               <input type="text" placeholder="Start writing or type a command">
               <div class="shortcut rounded d-flex justify-content-center gap-2 me-1 me-sm-0">
@@ -20,16 +28,17 @@
               </div>
             </form>
           </div>
-          <div class="col-12 col-sm d-flex align-items-center gap-4 justify-content-center justify-content-sm-end mt-3 mt-sm-0">
-            <div class="d-flex">
+
+          <div class="col d-flex align-items-center gap-4 justify-content-end">
+            <div class="d-flex icon-btn">
               <i class="bi bi-chat-left-dots top-icon"></i>
               <div class="notification rounded-circle"></div>
             </div>
-            <div class="d-flex">
+            <div class="d-flex icon-btn">
               <i class="bi bi-bell top-icon"></i>
               <div class="notification notification-bell rounded-circle"></div>
             </div>
-            <img [src]="user" class="rounded-circle user">
+            <img [src]="user" class="rounded-circle user icon-btn">
           </div>
         </div>
 
