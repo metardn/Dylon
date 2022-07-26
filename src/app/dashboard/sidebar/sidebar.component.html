@@ -1,86 +1,88 @@
-<div class="d-none d-lg-block sidebar min-vh-100 sticky">
-  <div class="d-flex gap-4 align-items-center pt-4 pb-5 ps-lg-4 ps-xl-5">
-    <img [src]="logo" class="logo">
-    <label class="fw-bold">Dylon</label>
-  </div>
-
-  <ul class="list-unstyled p-0">
-    <li>
-      <div class="row m-0 gx-0">
-        <div class="col p-3 ps-lg-4 ps-xl-5">
-          <i class="bi bi-grid-fill me-2"></i>
-          Dashboard
-        </div>
-        <div class="col-1 choosen-menu"></div>
-      </div>
-    </li>
-    <li>
-      <div class="row m-0 gx-0">
-        <div class="col">
-          <div class="p-3 ps-lg-4 ps-xl-5">
-            <i class="bi bi-calendar3 me-2"></i>
-            Calendar
-          </div>
-        </div>
-        <div class="col-1 choosen-menu"></div>
-      </div>
-    </li>
-    <li>
-      <div class="row m-0 gx-0">
-        <div class="col">
-          <div class="p-3 ps-lg-4 ps-xl-5">
-            <i class="bi bi-card-text me-2"></i>
-            Overview
-          </div>
-        </div>
-        <div class="col-1 choosen-menu"></div>
-      </div>
-    </li>
-    <li>
-      <div class="row m-0 gx-0">
-        <div class="col">
-          <div class="p-3 ps-lg-4 ps-xl-5">
-            <i class="bi bi-gem me-2"></i>
-            Result
-          </div>
-        </div>
-        <div class="col-1 choosen-menu"></div>
-      </div>
-    </li>
-    <li>
-      <div class="row m-0 gx-0">
-        <div class="col">
-          <div class="p-3 ps-lg-4 ps-xl-5">
-            <i class="bi bi-chat-left-dots me-2"></i>
-            Pitchs
-          </div>
-        </div>
-        <div class="col-1 choosen-menu"></div>
-      </div>
-    </li>
-  </ul>
+<div class="sticky">
+  <div class="d-block min-vh-100">
+    <div class="d-flex gap-4 align-items-center pt-4 pb-5 ps-lg-4 ps-xl-5">
+      <img [src]="logo" class="logo">
+      <label class="fw-bold">Dylon</label>
+    </div>
   
-  <div class="mx-lg-4 mx-xl-4 mx-xxl-5 px-xl-2">
-    <div class="airplane">
-      <div class="row">
-        <img [src]="airplane">
-      </div>
-      <div class="d-flex justify-content-center mt-5">
-        <button class="btn mt-4 space-nowrap">Get Pro Now</button>
+    <ul class="list-unstyled p-0 mb-0">
+      <li>
+        <div class="row m-0 gx-0">
+          <div class="col p-3 ps-lg-4 ps-xl-5">
+            <i class="bi bi-grid-fill me-2"></i>
+            Dashboard
+          </div>
+          <div class="col-1 choosen-menu"></div>
+        </div>
+      </li>
+      <li>
+        <div class="row m-0 gx-0">
+          <div class="col">
+            <div class="p-3 ps-lg-4 ps-xl-5">
+              <i class="bi bi-calendar3 me-2"></i>
+              Calendar
+            </div>
+          </div>
+          <div class="col-1 choosen-menu"></div>
+        </div>
+      </li>
+      <li>
+        <div class="row m-0 gx-0">
+          <div class="col">
+            <div class="p-3 ps-lg-4 ps-xl-5">
+              <i class="bi bi-card-text me-2"></i>
+              Overview
+            </div>
+          </div>
+          <div class="col-1 choosen-menu"></div>
+        </div>
+      </li>
+      <li>
+        <div class="row m-0 gx-0">
+          <div class="col">
+            <div class="p-3 ps-lg-4 ps-xl-5">
+              <i class="bi bi-gem me-2"></i>
+              Result
+            </div>
+          </div>
+          <div class="col-1 choosen-menu"></div>
+        </div>
+      </li>
+      <li>
+        <div class="row m-0 gx-0">
+          <div class="col">
+            <div class="p-3 ps-lg-4 ps-xl-5">
+              <i class="bi bi-chat-left-dots me-2"></i>
+              Pitchs
+            </div>
+          </div>
+          <div class="col-1 choosen-menu"></div>
+        </div>
+      </li>
+    </ul>
+    
+    <div class="mx-lg-4 mx-xl-4 mx-xxl-5 px-xl-2 pt-xl-4">
+      <div class="airplane">
+        <div class="row">
+          <img [src]="airplane">
+        </div>
+        <div class="d-flex justify-content-center mt-5">
+          <button class="btn mt-4 space-nowrap">Get Pro Now</button>
+        </div>
       </div>
     </div>
-  </div>
-
-  <div class="form-check form-switch p-0 mt-3">
-    <div class="row m-0 p-0 gx-0">
-      <div class="col d-flex justify-content-end">
-        <label>Light</label>
-      </div>
-      <div class="col-3 d-flex justify-content-center">
-        <input class="form-check-input mx-0 py-2" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-      </div>
-      <div class="col d-flex justify-content-start">
-        <label>Dark</label>
+  
+    <div class="form-check form-switch p-0 mt-3 pb-3">
+      <div class="row m-0 p-0 gx-0">
+        <div class="col d-flex justify-content-end">
+          <label>Light</label>
+        </div>
+        <div class="col-3 d-flex justify-content-center">
+          <input class="form-check-input mx-0 py-2" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+        </div>
+        <div class="col d-flex justify-content-start">
+          <label>Dark</label>
+        </div>
       </div>
     </div>
   </div>
