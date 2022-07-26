@@ -15,17 +15,20 @@ export class DashboardComponent implements OnInit {
       '#855752'
     ],
     xAxis: {
+      show: false,
       type: 'category',
       boundaryGap: false,
       data: [1,2,3,4,5,6,7,8,9,10,11]
     },
     yAxis: {
+      show: false,
       type: 'value'
     },
     series: [
       {
         data: [2,3,5,4.5,5,7,4.5,7,4,5,4.5],
         type: 'line',
+        symbol: "none",
         areaStyle: {
           color: '#FDBFA5',
           opacity: 0.2
@@ -39,17 +42,20 @@ export class DashboardComponent implements OnInit {
       '#82A78D'
     ],
     xAxis: {
+      show: false,
       type: 'category',
       boundaryGap: false,
       data: [1,2,3,4,5,6,7,8,9,10]
     },
     yAxis: {
+      show: false,
       type: 'value'
     },
     series: [
       {
         data: [2,3,3.1,7,5.5,6,4,4.1,4,6],
         type: 'line',
+        symbol: "none",
         areaStyle: {
           color: '#BEE7BB',
           opacity: 0.2
@@ -63,17 +69,20 @@ export class DashboardComponent implements OnInit {
       '#364FA2'
     ],
     xAxis: {
+      show: false,
       type: 'category',
       boundaryGap: false,
       data: [1,2,3,4,5,6,7,8,9]
     },
     yAxis: {
+      show: false,
       type: 'value'
     },
     series: [
       {
         data: [2,3,2,7,3.1,4,2,4,2],
         type: 'line',
+        symbol: "none",
         areaStyle: {
           color: '#7AC2FA',
           opacity: 0.2

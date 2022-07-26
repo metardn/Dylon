@@ -1,0 +1,82 @@
+.button-toggle {
+  background: #FFFFFF;
+  border: 1px solid #1E1F24;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.button-toggle:hover {
+  transition: 0,7s;
+  transform: translateY(-1px);
+}
+
+.offcanvas {
+  width: 30%;
+  border: none;
+}
+
+@media (max-width: 767px) {
+  .offcanvas { width: 35%;}
+}
+
+@media (max-width: 575px) {
+  .offcanvas { width: 50%;}
+}
+
+.logo { max-width: 30px; }
+
+.close-btn {
+  border: none;
+  font-size: x-large;
+  width: 40px;
+  height: 40px;
+}
+
+.choosen-menu {width: 4px; }
+
+ul li:hover {
+  font-weight: 500;
+
+  i { color: #2B6FFF; }
+  .choosen-menu { background: #2B6FFF; }
+}
+
+.airplane {
+  margin-top: 100%;
+  background: rgba(40, 44, 56, 0.05);
+  border-radius: 20px;
+  height: 100%;
+
+  img { 
+    width: stretch;
+    margin-top: -50%; 
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  button {
+    background: #BFD4FF;
+    border-radius: 20px;
+    border: none;
+  }
+}
+
+.airplane button:hover {
+  background: #b7cdf9;
+  transition: 0,7s;
+  transform: translateY(-1px);
+}
+
+.airplane button:hover {
+  background: #b7cdf9;
+  transition: 0,7s;
+  transform: translateY(-1px);
+}
+
+.form-check input {
+  border: 2px solid;
+}
+
+.toggle {
+  position: absolute;
+  bottom: 2%;
+}

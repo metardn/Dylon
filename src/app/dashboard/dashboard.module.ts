@@ -5,12 +5,14 @@ import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DashboardComponent } from './dashboard.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { NgxEchartsModule } from 'ngx-echarts';
+import { CanvasComponent } from './canvas/canvas.component';
 
 
 @NgModule({
   declarations: [
     DashboardComponent,
-    SidebarComponent
+    SidebarComponent,
+    CanvasComponent
   ],
   imports: [
     CommonModule,
