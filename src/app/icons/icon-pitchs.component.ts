@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'icon-pitchs',
-  template: `<svg width="30" height="30" viewBox="0 0 30 30" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  template: `<svg width="20" viewBox="0 0 30 30" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
   <path d="M15 15C15.6904 15 16.25 14.4404 16.25 13.75C16.25 13.0596 15.6904 12.5 15 12.5C14.3096 12.5 13.75 13.0596 13.75 13.75C13.75 14.4404 14.3096 15 15 15Z" fill="currentColor"/>
   <path d="M20 15C20.6904 15 21.25 14.4404 21.25 13.75C21.25 13.0596 20.6904 12.5 20 12.5C19.3096 12.5 18.75 13.0596 18.75 13.75C18.75 14.4404 19.3096 15 20 15Z" fill="currentColor"/>
   <path d="M10 15C10.6904 15 11.25 14.4404 11.25 13.75C11.25 13.0596 10.6904 12.5 10 12.5C9.30964 12.5 8.75 13.0596 8.75 13.75C8.75 14.4404 9.30964 15 10 15Z" fill="currentColor"/>
