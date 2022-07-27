@@ -1,21 +1,37 @@
-.space-nowrap { white-space: nowrap; }
+$color-dashboard-light:   rgba(40, 44, 56, 0.05);
+$color-dashboard-dark:    #141517;
+$color-bg-content-light:  #FFFFFF;
+$color-bg-content-dark:   #1E1F24;
+$color-text-light:        #1E1F24;
+$color-text-dark:         #A1A2A8;
+$color-text-bold-light:   #141517;
+$color-text-bold-dark:    #FFFFFF;
+$color-bg-btn-pro-light:  #BFD4FF;
+$color-btn-pro-light:     #BFD4FF;
+$color-btn-pro-dark:      #2B6FFF;
+$color-side-btn-light:    rgba(40, 44, 56, 0.05);
+$color-side-btn-dark:     #1E1F24;
+$color-bg-up-light:       rgba(40, 44, 56, 0.05);
+$color-bg-up-dark:        #282C38;
 
 :root {
-  --bg-dashboard: rgba(40, 44, 56, 0.05);
-  --bg-content: #FFFFFF;
-  --color-text: #1E1F24;
-  --color-text-bold: #141517;
-  --bg-btn-pro: #BFD4FF;
-  --bg-side-btn: rgba(40, 44, 56, 0.05);
-  --bg-up-content: rgba(40, 44, 56, 0.05);
+  --bg-dashboard: #{$color-dashboard-light};
+  --bg-content: #{$color-bg-content-light};
+  --color-text: #{$color-text-light};
+  --color-text-bold: #{$color-text-bold-light};
+  --bg-btn-pro: #{$color-btn-pro-light};
+  --bg-side-btn: #{$color-side-btn-light};
+  --bg-up-content: #{$color-bg-up-light};
 }
 
 [data-theme="dark"] {
-  --bg-dashboard: #141517;
-  --bg-content: #1E1F24;
-  --color-text: #A1A2A8;
-  --color-text-bold: #FFFFFF;
-  --bg-btn-pro: #2B6FFF;
-  --bg-side-btn: #1E1F24;
-  --bg-up-content: #282C38;
+  --bg-dashboard: #{$color-dashboard-dark};
+  --bg-content: #{$color-bg-content-dark};
+  --color-text: #{$color-text-dark};
+  --color-text-bold: #{$color-text-bold-dark};
+  --bg-btn-pro: #{$color-btn-pro-dark};
+  --bg-side-btn: #{$color-side-btn-dark};
+  --bg-up-content: #{$color-bg-up-dark};
 }
+
+.space-nowrap { white-space: nowrap; }
