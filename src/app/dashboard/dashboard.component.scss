@@ -50,7 +50,7 @@ form {
   }
 
   .shortcut {
-    background: rgba(40, 44, 56, 0.05);
+    background: var(--bg-up-content);
     width: 15%;
     color: var(--color-text-bold);
   }
