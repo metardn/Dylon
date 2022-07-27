@@ -6,6 +6,7 @@ import { IconOverviewComponent } from 'src/app/icons/icon-overview.component';
 import { IconResultComponent } from 'src/app/icons/icon-result.component';
 import { IconPitchsComponent } from 'src/app/icons/icon-pitchs.component';
 import { IconLogoComponent } from 'src/app/icons/icon-logo.component';
+import { DarkModeToggleComponent } from 'src/app/dark-mode-toggle/dark-mode-toggle.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { IconLogoComponent } from 'src/app/icons/icon-logo.component';
     IconOverviewComponent,
     IconResultComponent,
     IconPitchsComponent,
-    IconLogoComponent
+    IconLogoComponent,
+    DarkModeToggleComponent
   ]
 })
 export class SidebarModule { }

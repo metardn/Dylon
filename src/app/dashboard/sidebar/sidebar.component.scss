@@ -45,17 +45,6 @@ ul li:hover {
 }
 
 .airplane button:hover {
-  background: #b7cdf9;
   transition: 0,7s;
   transform: translateY(-1px);
-}
-
-.form-check input {
-  border: 2px solid;
-  box-shadow: none;
-}
-
-.toggle {
-  position: absolute;
-  bottom: 2%;
 }

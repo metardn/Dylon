@@ -59,14 +59,12 @@ ul li:hover {
   button {
     color: var(--color-text-bold);
     background: var(--bg-btn-pro);
-    background: #BFD4FF;
     border-radius: 20px;
     border: none;
   }
 }
 
 .airplane button:hover {
-  background: #b7cdf9;
   transition: 0,7s;
   transform: translateY(-1px);
 }

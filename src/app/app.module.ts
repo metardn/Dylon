@@ -8,7 +8,7 @@ import { NgxEchartsModule } from 'ngx-echarts';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,

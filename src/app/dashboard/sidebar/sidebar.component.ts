@@ -9,16 +9,10 @@ import { Model } from 'echarts';
 export class SidebarComponent implements OnInit {
   
   airplane = "assets/airplane.png"
-  darkmode = false
 
   constructor() { }
 
   ngOnInit(): void {
-  }
-
-  modeToggle() {
-    this.darkmode = !this.darkmode
-    document.documentElement.setAttribute('data-theme', this.darkmode? "dark" : "false")
   }
 
 }

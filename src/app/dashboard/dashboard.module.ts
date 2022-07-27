@@ -12,6 +12,7 @@ import { IconOverviewComponent } from '../icons/icon-overview.component';
 import { IconResultComponent } from '../icons/icon-result.component';
 import { IconPitchsComponent } from '../icons/icon-pitchs.component';
 import { IconLogoComponent } from '../icons/icon-logo.component';
+import { DarkModeToggleComponent } from '../dark-mode-toggle/dark-mode-toggle.component';
 
 
 
@@ -25,7 +26,8 @@ import { IconLogoComponent } from '../icons/icon-logo.component';
     IconOverviewComponent,
     IconResultComponent,
     IconPitchsComponent,
-    IconLogoComponent
+    IconLogoComponent,
+    DarkModeToggleComponent
   ],
   imports: [
     CommonModule,
