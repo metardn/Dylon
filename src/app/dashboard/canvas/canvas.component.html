@@ -1,32 +1,25 @@
 <div class="offcanvas offcanvas-start" id="sidebar">
-	<div class="d-flex justify-content-end">
-		<button type="button" class="btn close-btn me-2" data-bs-dismiss="offcanvas"><i class="bi bi-arrow-left"></i></button>
-	</div>
+	
   <div class="offcanvas-header">
-		<div class="d-flex gap-4 align-items-center5 ps-3">
-			<img [src]="logo" class="logo">
+		<div class="d-flex gap-4 align-items-center5 ps-3 py-3">
+      <icon-logo></icon-logo>
 			<label class="fw-bold">Dylon</label>
 		</div>
   </div>
 
   <div class="offcanvas-body p-0">
-    <div class=" ps-3">
+    <div class=" ps-2">
       <ul class="list-unstyled p-0">
         <li>
           <div class="row m-0 gx-0">
             <div class="col p-3">
-              <i class="bi bi-grid-fill me-2"></i>
-              Dashboard
-            </div>
-            <div class="col-1 choosen-menu"></div>
-          </div>
-        </li>
-        <li>
-          <div class="row m-0 gx-0">
-            <div class="col">
-              <div class="p-3">
-                <i class="bi bi-calendar3 me-2"></i>
-                Calendar
+              <div class="row">
+                <div class="col-3 pe-0 d-flex justify-content-center">
+                  <icon-dashboard class="icon-menu"></icon-dashboard>
+                </div>
+                <div class="col">
+                  Dashboard
+                </div>
               </div>
             </div>
             <div class="col-1 choosen-menu"></div>
@@ -36,8 +29,14 @@
           <div class="row m-0 gx-0">
             <div class="col">
               <div class="p-3">
-                <i class="bi bi-card-text me-2"></i>
-                Overview
+                <div class="row">
+                  <div class="col-3 pe-0 d-flex justify-content-center">
+                    <icon-calendar class="icon-menu"></icon-calendar>
+                  </div>
+                  <div class="col">
+                    Calendar
+                  </div>
+                </div>
               </div>
             </div>
             <div class="col-1 choosen-menu"></div>
@@ -47,8 +46,14 @@
           <div class="row m-0 gx-0">
             <div class="col">
               <div class="p-3">
-                <i class="bi bi-gem me-2"></i>
-                Result
+                <div class="row">
+                  <div class="col-3 pe-0 d-flex justify-content-center">
+                    <icon-overview class="icon-menu"></icon-overview>
+                  </div>
+                  <div class="col">
+                    Overview
+                  </div>
+                </div>
               </div>
             </div>
             <div class="col-1 choosen-menu"></div>
@@ -58,8 +63,31 @@
           <div class="row m-0 gx-0">
             <div class="col">
               <div class="p-3">
-                <i class="bi bi-chat-left-dots me-2"></i>
-                Pitchs
+                <div class="row">
+                  <div class="col-3 pe-0 d-flex justify-content-center">
+                    <icon-result class="icon-menu"></icon-result>
+                  </div>
+                  <div class="col">
+                    Result
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-1 choosen-menu"></div>
+          </div>
+        </li>
+        <li>
+          <div class="row m-0 gx-0">
+            <div class="col">
+              <div class="p-3">
+                <div class="row">
+                  <div class="col-3 pe-0 d-flex justify-content-center">
+                    <icon-pitchs class="icon-menu"></icon-pitchs>
+                  </div>
+                  <div class="col">
+                    Pitchs
+                  </div>
+                </div>
               </div>
             </div>
             <div class="col-1 choosen-menu"></div>

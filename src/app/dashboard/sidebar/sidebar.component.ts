@@ -7,7 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
   
-  logo = "assets/dashboard_logo.png"
   airplane = "assets/airplane.png"
   
   constructor() { }
