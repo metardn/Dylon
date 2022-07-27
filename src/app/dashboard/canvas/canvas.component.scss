@@ -10,6 +10,8 @@
 }
 
 .offcanvas {
+  background-color: var(--bg-content);
+  color: var(--color-text);
   width: 30%;
   border: none;
 }
@@ -22,7 +24,7 @@
   .offcanvas { width: 50%;}
 }
 
-.logo { max-width: 30px; }
+.logo { color: var(--color-text-bold); }
 
 .close-btn {
   border: none;
@@ -35,6 +37,7 @@
 
 ul li:hover {
   font-weight: 500;
+  color: var(--color-text-bold);
 
   .icon-menu { color: #2B6FFF; }
   .choosen-menu { background: #2B6FFF; }
@@ -54,6 +57,8 @@ ul li:hover {
   }
 
   button {
+    color: var(--color-text-bold);
+    background: var(--bg-btn-pro);
     background: #BFD4FF;
     border-radius: 20px;
     border: none;
@@ -76,7 +81,6 @@ ul li:hover {
   border: 2px solid;
 }
 
-.toggle {
-  position: absolute;
-  bottom: 2%;
+.bi-list {
+  color: var(--color-text-bold);
 }

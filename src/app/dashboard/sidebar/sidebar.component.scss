@@ -5,12 +5,18 @@
   top: 0;
 }
 
-.logo { max-width: 30px; }
+.sidebar { 
+  background: var(--bg-content);
+  color: var(--color-text);
+}
+
+.logo { color: var(--color-text-bold); }
 
 .choosen-menu {width: 4px; }
 
 ul li:hover {
   font-weight: 500;
+  color: var(--color-text-bold);
 
   .icon-menu { color: #2B6FFF; }
   .choosen-menu { background: #2B6FFF; }
@@ -30,9 +36,11 @@ ul li:hover {
   }
 
   button {
-    background: #BFD4FF;
+    color: var(--color-text-bold);
+    background: var(--bg-btn-pro);
     border-radius: 20px;
     border: none;
+    font-weight: 500;
   }
 }
 
@@ -44,6 +52,7 @@ ul li:hover {
 
 .form-check input {
   border: 2px solid;
+  box-shadow: none;
 }
 
 .toggle {

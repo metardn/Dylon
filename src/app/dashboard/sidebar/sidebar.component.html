@@ -1,6 +1,6 @@
-<div class="sticky">
+<div class="sticky sidebar">
   <div class="d-block min-vh-100">
-    <div class="d-flex gap-4 align-items-center pt-4 pb-5 ps-lg-4 ps-xl-5">
+    <div class="d-flex gap-4 align-items-center pt-4 pb-5 ps-lg-4 ps-xl-5 logo">
       <icon-logo></icon-logo>
       <label class="fw-bold">Dylon</label>
     </div>
@@ -108,7 +108,7 @@
           <label>Light</label>
         </div>
         <div class="col-3 d-flex justify-content-center">
-          <input class="form-check-input mx-0 py-2" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+          <input class="form-check-input mx-0 py-2" type="checkbox" role="switch" id="flexSwitchCheckDefault" (click)="modeToggle()"/>
         </div>
         <div class="col d-flex justify-content-start">
           <label>Dark</label>

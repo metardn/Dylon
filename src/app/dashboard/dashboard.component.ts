@@ -220,8 +220,8 @@ export class DashboardComponent implements OnInit {
         radius: ['70%', '95%'],
         itemStyle: {
           borderRadius: 4,
-          borderColor: '#fff',
-          borderWidth: 2
+          borderColor: "rgba(255, 255, 255, 0)",
+          borderWidth: 3
         },
         label: {
           show: false,

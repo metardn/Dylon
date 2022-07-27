@@ -1,1 +1,20 @@
 .space-nowrap { white-space: nowrap; }
+
+:root {
+  --bg-dashboard: rgba(40, 44, 56, 0.05);
+  --bg-content: #FFFFFF;
+  --color-text: #1E1F24;
+  --color-text-bold: #141517;
+  --bg-btn-pro: #BFD4FF;
+  --bg-side-btn: rgba(40, 44, 56, 0.05);
+}
+
+[data-theme="dark"] {
+  --bg-dashboard: #141517;
+  --bg-content: #1E1F24;
+  --color-text: #A1A2A8;
+  --color-text-bold: #FFFFFF;
+  --bg-btn-pro: #2B6FFF;
+  --bg-side-btn: #1E1F24;
+
+}

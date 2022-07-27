@@ -1,5 +1,6 @@
 .dashboard {
-  background: rgba(40, 44, 56, 0.05);
+  background: var(--bg-dashboard);
+  color: var(--color-text);
 }
 
 .notification {
@@ -19,6 +20,7 @@
 
 .top-icon {
   font-size: 23px;
+  color: var(--color-text-bold);
 }
 
 .icon-btn:hover {
@@ -36,17 +38,21 @@ form {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.07);
   border-radius: 10px;
   height: 44px;
+  background: var(--bg-content);
 
   input {
     border: none;
     outline: none;
     font-size: 14px;
     width: 70%;
+    background: var(--bg-content);
+    color: var(--color-text-bold);
   }
 
   .shortcut {
     background: rgba(40, 44, 56, 0.05);
     width: 15%;
+    color: var(--color-text-bold);
   }
 }
 
@@ -54,6 +60,7 @@ form {
   background: none;
   box-shadow: none;
   display: flex;
+  background: var(--bg-content);
   
   input {
     z-index: 10;
@@ -61,6 +68,8 @@ form {
     font-size: 14px;
     margin-left: 10%;
     padding: 0;
+    background: var(--bg-content);
+    color: var(--color-text-bold);
   }
 
   label {
@@ -68,6 +77,10 @@ form {
     height: 43px;
     cursor: pointer;
   }
+}
+
+.bold-color {
+  color: var(--color-text-bold);
 }
 
 .search-expand-form input:focus {
@@ -80,6 +93,7 @@ form {
 span img { width: 24px; }
 
 .card {
+  background: var(--bg-content);
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.07);
   border-radius: 10px;
   border: none;
@@ -88,9 +102,15 @@ span img { width: 24px; }
 .resume-card {
   height: 100%;
   
-  h5 { font-size: 16px; }
+  h5 { 
+    font-size: 16px; 
+    color: var(--color-text-bold);
+  }
 
-  h3 { font-size: 30px; }
+  h3 { 
+    font-size: 30px; 
+    color: var(--color-text-bold);
+  }
 
   span { font-size: 14px; }
 
@@ -110,7 +130,13 @@ span img { width: 24px; }
 
 .tab-traffic:hover, .active {
   font-weight: 500;
+  color: var(--color-text-bold);
   .choosen-menu { background:#2B6FFF;}
+}
+
+select {
+  background: var(--bg-content);
+  color: var(--color-text);
 }
 
 select {
@@ -121,13 +147,15 @@ select {
 
 .animate {
   border: none;
+  color: var(--color-text);
 }
 
 .animate:hover, .animate-active {
   font-weight: 500;
-  background: rgba(40, 44, 56, 0.05);
+  background: var(--bg-side-btn);
   transition: 0,7s;
   transform: translateY(-1px);
+  color: var(--color-text-bold);
 }
 
 .geo-chart {
@@ -142,7 +170,10 @@ select {
   }
 }
 
-.card-title { font-size: 16px;}
+.card-title { 
+  font-size: 16px;
+  color: var(--color-text-bold);
+}
 .text-item { font-size: 14px; }
 
 .view-chart {
