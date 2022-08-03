@@ -13,8 +13,8 @@ export class AuthService {
     return localStorage.getItem('token')
   }
 
-  logIn(username: string, password: string): Observable<any> {
-    return this.http.post<User>(this.baseUrl, {username, password})
+  logIn(user: User): Observable<any> {
+    return this.http.post<User>(this.baseUrl, {user})
   }
 
   loginUser (user: any) {

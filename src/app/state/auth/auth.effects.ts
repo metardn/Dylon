@@ -1,31 +1,25 @@
 import { Injectable } from '@angular/core';
-import { Action } from '@ngrx/store';
+// import { Action } from '@ngrx/store';
 import { Router } from '@angular/router';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
-import { Observable } from 'rxjs';
-import 'rxjs/add/observable/of';
-import 'rxjs/add/operator/map';
-import 'rxjs/add/operator/switchMap';
-import 'rxjs/add/operator/catch';
-import { concatMap, tap } from 'rxjs/operators';
-
+import { catchError, of, exhaustMap, map, tap } from 'rxjs';
 import { AuthService } from '../../services/auth.service';
 
 import {
-    AuthActionTypes,
-    LogIn, LogInFailure, LogInSuccess, 
-  } from '../auth/auth.actions';
+  AuthActionTypes,
+  LogIn, LogInFailure, LogInSuccess, 
+} from '../auth/auth.actions';
 
 
 @Injectable()
 export class AuthEffects {
-  constructor(
-    private actions: Actions,
-    private authService: AuthService,
-    private router: Router,
-  ) {}
+constructor(
+  private actions: Actions,
+  private authService: AuthService,
+  private router: Router,
+) {}
 
-  // effects go here
+//   // effects go here
 
   // LogIn = createEffect(() => {
   //   return this.actions.pipe(

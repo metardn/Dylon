@@ -1,5 +1,6 @@
+import { Action, createReducer, on } from "@ngrx/store";
 import { User } from "src/app/model/user";
-import { AuthActionTypes, All } from './auth.actions';
+import { LogIn, LogInSuccess, LogInFailure } from './auth.actions';
 
 export interface State {
   isAuthenticated: boolean
@@ -13,21 +14,23 @@ export const initialState: State = {
   errorMessage: null
 };
 
-// export function reducer(state = initialState, action: All): State {
-//   switch (action.type) {
-//     case AuthActionTypes.LOGIN_SUCCESS: {
-//       return {
-//         ...state,
-//         isAuthenticated: true,
-//         user: {
-//           token: action.payload.token,
-//           username: action.payload.username
-//         },
-//         errorMessage: null
-//       };
-//     }
-//     default: {
-//       return state;
-//     }
-//   }
-// }
+export const reducer = createReducer(
+  initialState,
+  on(LogIn, (state) => state),
+  on(LogInSuccess, (state, { user } ) => {
+    return {
+      ...state,
+      isAuthenticated: true,
+      user: user,
+      errorMessage: null
+    }
+  }),
+  on(LogInFailure, (state, {message}) => {
+    return {
+      ...state,
+      isAuthenticated: false,
+      user: null,
+      errorMessage: message
+    }
+  })
+)

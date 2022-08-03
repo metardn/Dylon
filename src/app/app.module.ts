@@ -9,8 +9,9 @@ import { EffectsModule } from '@ngrx/effects';
 import { FormsModule } from '@angular/forms';
 import { AuthService } from './services/auth.service';
 import { HttpClientModule } from '@angular/common/http';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 // import { AuthEffects } from './state/auth/auth.effects';
-// import { reducers } from './state/app.state';
+import { reducers } from './state/app.state';
 
 
 @NgModule({
@@ -25,9 +26,11 @@ import { HttpClientModule } from '@angular/common/http';
     }),
     FormsModule,
     HttpClientModule,
-    // StoreModule.forRoot({}, {}),
+    StoreModule.forRoot(reducers, {}),
     // EffectsModule.forRoot([AuthEffects]),
     StoreModule,
+    StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: false }),
+    
     EffectsModule,
   ],
   providers: [AuthService],
