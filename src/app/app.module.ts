@@ -10,7 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { AuthService } from './services/auth.service';
 import { HttpClientModule } from '@angular/common/http';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
-// import { AuthEffects } from './state/auth/auth.effects';
+import { AuthEffects } from './state/auth/auth.effects';
 import { reducers } from './state/app.state';
 
 

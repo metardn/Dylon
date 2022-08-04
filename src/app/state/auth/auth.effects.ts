@@ -2,7 +2,8 @@ import { Injectable } from '@angular/core';
 // import { Action } from '@ngrx/store';
 import { Router } from '@angular/router';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
-import { catchError, of, exhaustMap, map, tap } from 'rxjs';
+import { catchError, of, exhaustMap, map, tap, concatMap } from 'rxjs';
+import { User } from 'src/app/model/user';
 import { AuthService } from '../../services/auth.service';
 
 import {
@@ -13,29 +14,33 @@ import {
 
 @Injectable()
 export class AuthEffects {
-constructor(
-  private actions: Actions,
-  private authService: AuthService,
-  private router: Router,
-) {}
+  constructor(
+    private actions: Actions,
+    private authService: AuthService,
+    private router: Router,
+  ) {}
 
-//   // effects go here
-
-  // LogIn = createEffect(() => {
-  //   return this.actions.pipe(
-  //     map((action: LogIn) => action.payload)
-  //     .switchMap((payload => {
-  //       return this.authService.logIn(payload.username, payload.password)
-  //       .map((user) => {
-  //         console.log(user);
-  //         return new LogInSuccess({token: user.token, username: payload.username});
-  //       })
-  //       .catch((error) => {
-  //         console.log(error);
-  //         return Observable.of(new LogInFailure({ error: error }));
-  //       })
-  //     }))
-  //   )
-  // })
+  LogInSuccess = createEffect(() => {
+    return this.actions.pipe(
+      ofType(LogInSuccess),
+      tap(() => {
+        console.log('effect success')
+        this.router.navigate(['/'])
+      })
+    )
+  })
+// LogIn = createEffect(() => {
+//   return this.actions.pipe(
+//     concatMap((action) =>
+//       this.authService.loginUser(action).pipe(
+//         map((user) => 
+//           LogInSuccess({user: user}),
+//           console.log("effect success")
+//         ),
+//         catchError((error) => of(LogInFailure({message: error})))
+//       )
+//     )
+//   )
+// })
 
 }

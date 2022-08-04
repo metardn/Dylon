@@ -14,11 +14,10 @@ export class LoginComponent implements OnInit {
 
   logo = "assets/logo.png"
   user: User = new User()
+  err: any
 
   constructor( private auth: AuthService,
-    private store: Store<AppState>
-     ) {
-  }
+    private store: Store<AppState> ) {}
 
   ngOnInit(): void {
   }
@@ -43,6 +42,7 @@ export class LoginComponent implements OnInit {
       },
       err => {
         console.log(err)
+        this.err = err
         this.store.dispatch(LogInFailure(err))
       }
     )

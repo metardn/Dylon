@@ -44,6 +44,12 @@ p {
   }
 }
 
+.invalid {
+  background: #ffd0d8;
+  border: 1px solid #fc96a7;
+  font-size: small;
+}
+
 form input { box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1); }
 
 input:focus { border: 1px solid #000AFF; }
