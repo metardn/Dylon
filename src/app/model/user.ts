@@ -1,4 +1,6 @@
 export class User {
+  username? : string;
+  token? : string;
   id?: number;
   firstName? : string;
   lastName? : string;
@@ -7,9 +9,7 @@ export class User {
   gender? : string;
   email? : string;
   phone? : string;
-  username? : string;
   password? : string;
   birthDate? : string;
   image? : string;
-  token? : string;
 }

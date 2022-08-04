@@ -7,7 +7,7 @@ import { AuthService } from '../../services/auth.service';
 
 import {
   AuthActionTypes,
-  LogIn, LogInFailure, LogInSuccess, 
+  LogInFailure, LogInSuccess, 
 } from '../auth/auth.actions';
 
 
